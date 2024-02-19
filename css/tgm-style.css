@@ -105,7 +105,7 @@ h3.blog-top-title-tex {
 .blog-img-section-mb {
   margin-bottom: 20px;
 }
-.blog-yellow-btns {
+.blog-yellow-btns, .blog-yellow-btns1 {
   font-family: "PT Sans", Sans-serif;
   font-size: 46px;
   font-weight: bold;
@@ -123,7 +123,7 @@ h3.blog-top-title-tex {
   display: inline-block;
   transition: all .3s;
 }
-.blog-yellow-btns:hover{
+.blog-yellow-btns:hover, .blog-yellow-btns1:hover{
   color: #FFFFFF;
   background-color: #EC9D44;
   text-decoration: none;

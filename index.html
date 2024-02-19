@@ -49,28 +49,27 @@
         jQuery(document).ready(function($){
             var webparams1 = getUrlVars()['utm_source']+'_'+getUrlVars()['utm_campaign']+'_'+getUrlVars()['audience'];
             var	webparams = getUrlVars()['source'];
+            var	webEnterParam = "";
+            if(getUrlVars()['enter'] !== 'undefined')
+              webEnterParam = getUrlVars()['enter'];
         
             if(webparams1 !== 'undefined_undefined_undefined' || typeof webparams !== 'undefined'){
                 if(webparams1 !== 'undefined_undefined_undefined'){
                     var params1 = 'passthrough[custom_leadsource]=LF-'+webparams1;
-                    //var _href = $('.custom_fields_lead_source a').attr('href');
-                    //$('.custom_fields_lead_source a').attr('href', _href + '?'+params1);
                     var _hrefLink = $(".blog-yellow-btns").attr("href");
                     $(".blog-yellow-btns").attr("href", _hrefLink + "?" + params1);
                 }
                 if(typeof webparams !== 'undefined'){
-                    var params = 'passthrough[custom_leadsource]=LF-'+webparams;
-                    //var _href = $('.custom_fields_lead_source a').attr('href');
-                    //$('.custom_fields_lead_source a').attr('href', _href + '?'+params);
+                    var params = 'passthrough[custom_leadsource]=LF-'+webparams+'&passthrough[custom_enter]='+webEnterParam;
                     var _hrefLink = $(".blog-yellow-btns").attr("href");
                     $(".blog-yellow-btns").attr("href", _hrefLink + "?" + params);
+                    var _hrefLink = $(".blog-yellow-btns1").attr("href");
+                    $(".blog-yellow-btns1").attr("href", _hrefLink + "?" + params);
                 }		
             }
             else{
                 var params = 'null';
-                var params = 'passthrough[custom_leadsource]='+params;
-                //var _href = $('.custom_fields_lead_source a').attr('href');
-                //$('.custom_fields_lead_source a').attr('href', _href + '?'+params);
+                var params = 'passthrough[custom_leadsource]='+params+'&passthrough[custom_enter]='+webEnterParam;
                 var _hrefLink = $(".blog-yellow-btns").attr("href");
                 $(".blog-yellow-btns").attr("href", _hrefLink + "?" + params);
             }
@@ -1753,7 +1752,7 @@
                   <img loading="lazy" class="blog-img-section-mb" width="424" src="fun/img/tgm-lf-rb-house/bundlepostman-1024x389.webp"/>
                 </div>
                 <span>
-                  <a href="https://secure.groweverywhere.com/revolution-garden-mastery-system-rb-phys/" class="blog-yellow-btns" role="button">
+                  <a href="https://secure.groweverywhere.com/revolution-garden-mastery-system-rb-phys/" class="blog-yellow-btns1" role="button">
                     YES! Give Me Food Abundance!
                   </a>
                 </span>
@@ -1900,7 +1899,7 @@
                   <img loading="lazy" class="blog-img-section-mb" width="424" src="fun/img/tgm-lf-rb-house/bundlepostman-1024x389.webp"/>
                 </div>
                 <span>
-                  <a href="https://secure.groweverywhere.com/revolution-garden-mastery-system-rb-phys/" class="blog-yellow-btns" role="button">
+                  <a href="https://secure.groweverywhere.com/revolution-garden-mastery-system-rb-phys/" class="blog-yellow-btns1" role="button">
                     YES! Give Me Food Abundance!
                   </a>
                 </span>
@@ -2020,7 +2019,7 @@
                   <img loading="lazy" class="blog-img-section-mb" width="424" src="fun/img/tgm-lf-rb-house/bundlepostman-1024x389.webp"/>
                 </div>
                 <span>
-                  <a href="https://secure.groweverywhere.com/revolution-garden-mastery-system-rb-phys/" class="blog-yellow-btns" role="button">
+                  <a href="https://secure.groweverywhere.com/revolution-garden-mastery-system-rb-phys/" class="blog-yellow-btns1" role="button">
                     YES! Give Me Food Abundance!
                   </a>
                 </span>
@@ -2112,7 +2111,7 @@
                   <img loading="lazy" class="blog-img-section-mb" width="424" src="fun/img/tgm-lf-rb-house/bundlepostman-1024x389.webp"/>
                 </div>
                 <span>
-                  <a href="https://secure.groweverywhere.com/revolution-garden-mastery-system-rb-phys/" class="blog-yellow-btns" role="button">
+                  <a href="https://secure.groweverywhere.com/revolution-garden-mastery-system-rb-phys/" class="blog-yellow-btns1" role="button">
                     YES! Give Me Food Abundance!
                   </a>
                 </span>
@@ -2219,7 +2218,7 @@
                   <img loading="lazy" class="blog-img-section-mb" width="424" src="fun/img/tgm-lf-rb-house/bundlepostman-1024x389.webp"/>
                 </div>
                 <span>
-                  <a href="https://secure.groweverywhere.com/revolution-garden-mastery-system-rb-phys/" class="blog-yellow-btns" role="button">
+                  <a href="https://secure.groweverywhere.com/revolution-garden-mastery-system-rb-phys/" class="blog-yellow-btns1" role="button">
                     YES! Give Me Food Abundance!
                   </a>
                 </span>
@@ -2263,7 +2262,7 @@
                   <img loading="lazy" class="blog-img-section-mb" width="424" src="fun/img/tgm-lf-rb-house/bundlepostman-1024x389.webp"/>
                 </div>
                 <span>
-                  <a href="https://secure.groweverywhere.com/revolution-garden-mastery-system-rb-phys/" class="blog-yellow-btns" role="button">
+                  <a href="https://secure.groweverywhere.com/revolution-garden-mastery-system-rb-phys/" class="blog-yellow-btns1" role="button">
                     YES! Give Me Food Abundance!
                   </a>
                 </span>
@@ -2322,7 +2321,7 @@
                   <img loading="lazy" class="blog-img-section-mb" width="424" src="fun/img/tgm-lf-rb-house/bundlepostman-1024x389.webp"/>
                 </div>
                 <span>
-                  <a href="https://secure.groweverywhere.com/revolution-garden-mastery-system-rb-phys/" class="blog-yellow-btns" role="button">
+                  <a href="https://secure.groweverywhere.com/revolution-garden-mastery-system-rb-phys/" class="blog-yellow-btns1" role="button">
                     YES! Give Me Food Abundance!
                   </a>
                 </span>
@@ -2387,7 +2386,7 @@
                   <img loading="lazy" class="blog-img-section-mb" width="424" src="fun/img/tgm-lf-rb-house/bundlepostman-1024x389.webp"/>
                 </div>
                 <span>
-                  <a href="https://secure.groweverywhere.com/revolution-garden-mastery-system-rb-phys/" class="blog-yellow-btns" role="button">
+                  <a href="https://secure.groweverywhere.com/revolution-garden-mastery-system-rb-phys/" class="blog-yellow-btns1" role="button">
                     YES! Give Me Food Abundance!
                   </a>
                 </span>
@@ -2494,7 +2493,7 @@
                   <img loading="lazy" class="blog-img-section-mb" width="424" src="fun/img/tgm-lf-rb-house/bundlepostman-1024x389.webp"/>
                 </div>
                 <span>
-                  <a href="https://secure.groweverywhere.com/revolution-garden-mastery-system-rb-phys/" class="blog-yellow-btns" role="button">
+                  <a href="https://secure.groweverywhere.com/revolution-garden-mastery-system-rb-phys/" class="blog-yellow-btns1" role="button">
                     YES! Give Me Food Abundance!
                   </a>
                 </span>
@@ -2562,7 +2561,7 @@
                   <img loading="lazy" class="blog-img-section-mb" width="424" src="fun/img/tgm-lf-rb-house/bundlepostman-1024x389.webp"/>
                 </div>
                 <span>
-                  <a href="https://secure.groweverywhere.com/revolution-garden-mastery-system-rb-phys/" class="blog-yellow-btns" role="button">
+                  <a href="https://secure.groweverywhere.com/revolution-garden-mastery-system-rb-phys/" class="blog-yellow-btns1" role="button">
                     YES! Give Me Food Abundance!
                   </a>
                 </span>
@@ -2635,7 +2634,7 @@
                   <img loading="lazy" class="blog-img-section-mb" width="424" src="fun/img/tgm-lf-rb-house/bundlepostman-1024x389.webp"/>
                 </div>
                 <span>
-                  <a href="https://secure.groweverywhere.com/revolution-garden-mastery-system-rb-phys/" class="blog-yellow-btns" role="button">
+                  <a href="https://secure.groweverywhere.com/revolution-garden-mastery-system-rb-phys/" class="blog-yellow-btns1" role="button">
                     YES! Give Me Food Abundance!
                   </a>
                 </span>
