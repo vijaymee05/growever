@@ -128,7 +128,9 @@ h3.blog-top-title-tex {
   background-color: #EC9D44;
   text-decoration: none;
 }
-
+.vimeo-video{
+  width: 100%;
+}
     
 .button-text-heading{
   font-size: 30px;
