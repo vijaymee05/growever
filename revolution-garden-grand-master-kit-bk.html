@@ -14,6 +14,12 @@
     />
     <link rel="stylesheet" type="text/css" href="css/tgm-style.css">
     <script src="js/jquery-3.5.1.slim.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type='text/javascript'>
+    jQuery(document).ready(function () {
+      jQuery('#subscribe-gmkit').modal('hide');
+    });
+  </script>
     <!-- Google Analytics snippet added by Site Kit -->
     <script type='text/javascript' src='https://www.googletagmanager.com/gtag/js?id=G-XGM1Z983GC' id='google_gtagjs-js' async></script>
     <script type='text/javascript' id='google_gtagjs-js-after'>
@@ -713,5 +719,54 @@
       </div>
     </div>
   </section>
+  <div class="modal fade in" id="subscribe-gmkit" tabindex="-1" aria-labelledby="subscribeLabel" aria-hidden="true" style="display: none;">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header text-center">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="container-fluid">
+									<h6 class="modal-title" id="subscribeLabel"> Get on the waitlist for 2024 Kits!</h6>
+                    <div class="row text-center">
+                        <div class="col-12 col-md-12 pt-20">
+                            <!-- AP Sucks Maropost -->
+                            <form method="post" action="https://api.maropost.com/accounts/1521/forms/30/subscribe/b322bfbac1c90a825fec9fc1dfe333a52b2be8b5" class="full_length_box">
+                                <div class="_form-content">
+                                    <div class="_button-wrapper _full_width"></div>
+                                    <div class="_clear-element"></div>
+                                </div>
+                                <div class="_form-thank-you" style="display:none;"></div>
+                                <div class="col-md-12 _form_element _x2138653-group">
+                                    <div class="_field-wrapper form-group">
+                                        <input include_blank="true" start_year="1950" type="text" placeholder="Enter Your First Name" class="form-control form-control-lg required" name="contact_fields[first_name]" id="contact_fields_first_name">
+
+                                        <input type="hidden" include_blank="true" start_year="1950" name="custom_fields[lead_source]" id="custom_fields_lead_source" value="">
+                                    </div>
+                                </div>
+                                <div class="col-md-12 _form_element _x2138653-group">
+                                    <div class="_field-wrapper form-group">
+                                        <input include_blank="true" start_year="1950" type="text" placeholder="Enter Your Last Name" class="form-control form-control-lg required" name="contact_fields[last_name]" id="contact_fields_last_name">
+                                    </div>
+                            </div>
+
+                                <div class="col-md-12 _form_element _x43713524 _full_width">
+                                    <div class="_field-wrapper form-group">
+                                        <input style="margin-top: 10px;" include_blank="true" start_year="1950" type="text" placeholder="Enter Your Email" class="form-control form-control-lg required1" name="contact_fields[email]" id="contact_fields_email">
+                                    <div class="_field-wrapper form" name="contact_fields[email]" id="contact_fields_email">
+                                    </div>
+                                </div>
+
+                                <button id=" col-md-12 _form_27_submit" name="commit" class="_submit cta-button optin-button" type="submit">Add me to the waitlist</button>
+                        </div></form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+  </div>
   </body>
 </html>
