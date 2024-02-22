@@ -29,6 +29,16 @@ h2.blog-top-sub-title {
   letter-spacing: 2px;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
+.blog-top-sub-green-title {
+  color: #519304;
+  font-family: "PT Sans", Sans-serif;
+  font-size: 58px;
+  font-weight: 400;
+  line-height: 58px;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  padding-bottom: 20px;
+}
 h3.blog-top-title-tex {
   text-align: center;
   color: #f50707;
@@ -73,6 +83,26 @@ h3.blog-top-title-tex {
   letter-spacing: 0px;
   text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.3);
 }
+.italic-small-text{
+  text-align: center;
+  color: #2f2f2f;
+  font-family: "Open Sans",Sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  font-style: italic;
+  line-height: 17px;
+  letter-spacing: 0;
+  padding: 20px;
+}
+.page-title-orange {
+  color: #e9752f;
+  font-family: "PT Sans", Sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 52px;
+  letter-spacing: 0px;
+  text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.3);
+}
 .blog-content-text p {
   text-align: left;
   color: #4c4c4c;
@@ -100,7 +130,7 @@ h3.blog-top-title-tex {
   -ms-flex-pack: center;
   justify-content: center;
   flex-direction: column;
-  display: flex;
+  /*display: flex;*/
 }
 .blog-img-section-mb {
   margin-bottom: 20px;
@@ -127,6 +157,44 @@ h3.blog-top-title-tex {
   color: #FFFFFF;
   background-color: #EC9D44;
   text-decoration: none;
+}
+.yellow-btn-text{
+  text-align: center;
+  color: #2f2f2f;
+  font-family: "Open Sans",Sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  font-style: italic;
+  line-height: 34px;
+  letter-spacing: 0;
+  padding: 20px;
+}
+.black-heading{
+  text-align: center;
+  color: #2f2f2f;
+  font-family: "Open Sans",Sans-serif;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 42px;
+}
+.yellow-container{
+  margin: 20px 20px 20px 55px;
+  padding: 20px;
+  background-color: #fff078;
+  border-style: solid;
+  border-width: 3px;
+  border-color: #ec7244;
+}
+.blog-small-img-section{
+  padding-right: 20px;
+}
+.money-back-text{
+  text-align: center;
+  color: #4c4c4c;
+  font-family: "PT Sans", Sans-serif;
+  font-size: 28px;
+  margin-bottom: 3rem;
+  margin-top: 45px;
 }
 .vimeo-video{
   width: 519px;
@@ -174,6 +242,17 @@ h3.blog-top-title-tex {
 .bf-ulli ul li a {
   color: #54595f;
   text-decoration: none;
+}
+.red-section{
+  background-color: #ff0000;
+  transition: background .3s,border .3s,border-radius .3s,box-shadow .3s;
+  height: 125px;
+  text-align: center;
+  font-family: Roboto,Sans-serif;
+  font-size: 23px;
+  font-weight: 400;
+  padding: 20px;
+  color: #fff;
 }
 @media (max-width: 961px) {
   h1.blog-top-title {
